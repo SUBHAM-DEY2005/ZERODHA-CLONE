@@ -12,7 +12,7 @@ const SellActionWindow = ({ uid, stock }) => {
 
   const handleSellClick = async () => {
     try {
-      await axios.post("http://localhost:8080/newOrder", {
+      await axios.post("https://zerodha-backend-mtpe.onrender.com/newOrder", {
         name: uid,
         qty: Number(stockQuantity),
         price: Number(stockPrice),

@@ -19,8 +19,8 @@ import GeneralContext from "./GeneralContext";
 import MarketDepth from "./MarketDepth";
 import './css/WatchList.css';
 
-axios.defaults.baseURL = "http://localhost:8080";
-const socket = io("http://localhost:8080");
+axios.defaults.baseURL = "https://zerodha-backend-mtpe.onrender.com";
+const socket = io("https://zerodha-backend-mtpe.onrender.com");
 
 function WatchList() {
 

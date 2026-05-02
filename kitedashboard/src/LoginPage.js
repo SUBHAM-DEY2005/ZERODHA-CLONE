@@ -22,7 +22,7 @@ const LoginPage = ({ onLogin }) => {
       if (!token) return;
 
       try {
-        const response = await fetch("http://localhost:8080/univers", {
+        const response = await fetch("https://zerodha-backend-mtpe.onrender.com/univers", {
           headers: { "Authorization": `Bearer ${token}` }
         });
 
@@ -33,7 +33,7 @@ const LoginPage = ({ onLogin }) => {
             ? data.name.split(" ").map(n => n[0]).join("").toUpperCase()
             : "U";
 
-          setUserProfile({ name: data.name, initials });
+          setUserProfile({ name: data.name, initials, email: data.email });
         }
       } catch (err) {
         console.error("Session expired or fetch error:", err);
@@ -47,7 +47,7 @@ const LoginPage = ({ onLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8080/login", {
+      const response = await fetch("https://zerodha-backend-mtpe.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

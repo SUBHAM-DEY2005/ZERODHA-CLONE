@@ -20,7 +20,7 @@ const url = process.env.MONGO_URL;
 
 const app = express();
 
-const allowedOrigins = ["http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = ["https://zerodha-backend-mtpe.onrender.com", "https://zerodha-kitedashboard.onrender.com"];
 app.use(cors({
     origin: (origin, callback) => {
         if (!origin || allowedOrigins.includes(origin)) {
