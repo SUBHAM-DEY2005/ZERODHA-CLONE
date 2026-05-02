@@ -127,7 +127,7 @@ const LoginPage = ({ onLogin }) => {
           <img src='/images/apple.svg' alt="apple" />
         </div>
         <div className="footer-logo">
-          <a href='/'><img src='/images/logo.svg' alt="logo" /></a>
+          <a href='https://zerodha-clone-k5wh.onrender.com'><img src='/images/logo.svg' alt="logo" /></a>
         </div>
         <a href="#" className="signup-link">Don't have an account? Sign up for free!</a>
         <p className="legal-text">
