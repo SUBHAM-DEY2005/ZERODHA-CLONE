@@ -126,9 +126,11 @@ const LoginPage = ({ onLogin }) => {
           <img style={{ marginRight: "25px" }} src='/images/android.svg' alt="android" />
           <img src='/images/apple.svg' alt="apple" />
         </div>
+        <a href='https://zerodha-clone-k5wh.onrender.com'>
         <div className="footer-logo">
-          <a href='https://zerodha-clone-k5wh.onrender.com'><img src='/images/logo.svg' alt="logo" /></a>
+          <img src='/images/logo.svg' alt="logo" />
         </div>
+        </a>
         <a href="#" className="signup-link">Don't have an account? Sign up for free!</a>
         <p className="legal-text">
           Zerodha Broking Limited: Member of NSE, BSE, MCX - SEBI Reg. <br />
