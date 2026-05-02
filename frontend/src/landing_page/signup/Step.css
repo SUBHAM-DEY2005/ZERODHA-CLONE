@@ -1,0 +1,105 @@
+/* Video Container Styling */
+.video-container-acop {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+
+.video-placeholder {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Red Play Button Overlay */
+.play-button {
+    position: absolute;
+    width: 65px;
+    height: 45px;
+    background-color: #e22b2b;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    margin-left: 120px;
+   margin-top: 53px
+}
+
+.video-placeholder:hover .play-button {
+    transform: scale(1.1);
+    background-color: #ff0000;
+}
+
+.play-triangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+}
+
+/* Iframe Sizing */
+#video-embed-acop, #youtube-iframe-acop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Steps List Styling */
+.steps-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee; /* The horizontal line */
+}
+
+.step-item:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    font-size: 14px;
+    color: #999;
+    border: 1px solid #ddd;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.step-text {
+    font-size: 1.25rem;
+    color: #444;
+    margin: 0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 991px) {
+    .step-text {
+        font-size: 1.1rem;
+    }
+}
+
+.img-fluid{
+    width: 75%;
+   margin-left: 90px;
+   margin-top: 30px
+}

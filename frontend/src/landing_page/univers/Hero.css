@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* NAVBAR */
+.navbar {
+  height: 70px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  width: 120px;
+}
+
+/* USER */
+.user-container {
+  position: relative;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: #e9eef8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #2f6fc0;
+}
+
+
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background: #fff;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 5px 0;
+}
+
+.dropdown-header {
+  margin-top: 10px;
+}
+
+.dropdown p {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.dropdown p:hover {
+  font-family: Bold;
+}
+
+.logout {
+  color: red;
+}
+
+/* HERO */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.hero-card {
+  width: 70%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.05);
+}
+
+/* LEFT */
+.hero-left {
+  max-width: 60%;
+}
+
+.hero-left h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.welcome {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.login-btn {
+  margin-top: 50px;
+  width: 260px;
+  height: 55px;
+  background: #387ed1;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-btn:hover {
+  background: rgb(46, 23, 23);
+}
+
+
+/* RIGHT */
+.hero-right {
+  position: relative;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  background: #3b82f6;
+  border-radius: 50%;
+}
+
+.tick {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  background: #f59e0b;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}

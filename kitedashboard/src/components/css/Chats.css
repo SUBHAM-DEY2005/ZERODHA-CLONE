@@ -1,0 +1,70 @@
+.chats-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+}
+
+/* HEADER */
+.chats-header {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.stock-info h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.stock-sub {
+  font-size: 12px;
+  color: gray;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab-btn.active {
+  border-bottom: 2px solid #1976d2;
+  color: #1976d2;
+}
+
+/* CONTENT */
+.tab-content {
+  flex: 1;
+  padding: 10px;
+}
+
+/* CHART */
+.chart-box {
+  height: 100%;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+/* EMPTY */
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: gray;
+}
+
+/* PLACEHOLDER */
+.placeholder {
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+}

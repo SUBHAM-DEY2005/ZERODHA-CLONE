@@ -1,0 +1,74 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 99;
+}
+
+/* CENTER MODAL */
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 320px;
+  background: rgb(245, 245, 245);
+  border-radius: 6px;
+  z-index: 100;
+  border: 1px solid #ddd;
+}
+
+/* HEADER */
+.header1 {
+  width: calc(100% + 27px);   
+  margin-left: -13.2px;         
+  margin-top: -15px;
+  background: #f38e41;
+  padding: 15px;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* INPUTS */
+.inputs {
+  width: 600px;
+  padding: 20px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 5px;
+  width: 45%;
+}
+
+fieldset input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+}
+
+/* BUTTONS */
+.buttons1 {
+  padding: 15px;
+}
+
+.btn1 {
+  border: none;
+  cursor: pointer;
+  width: 255px;
+  height: 40px;
+}
+
+.btn-blue1 {
+  background: #f38e41;
+  color: white;
+}
+
+.btn-grey1 {
+  background: #ccc;
+}

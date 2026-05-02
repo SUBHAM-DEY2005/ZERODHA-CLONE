@@ -1,0 +1,23 @@
+.holo{
+  padding: 20px 100px 120px 120px;
+}
+
+.sec{
+  border: none;
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.05);
+  padding: 30px;
+  margin: 16px;
+  width: 30%;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.sec p{
+  font-size: 13px;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.sec img{
+  margin: 10px;
+}

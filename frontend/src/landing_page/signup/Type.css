@@ -1,0 +1,49 @@
+.account-card {
+    position: relative;
+    border: 1px solid #eee; /* Light gray border */
+    border-radius: 4px;
+    padding: 40px 30px 40px 50px; /* Extra left padding for the icon */
+    height: 100%;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.account-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-color: #387ed1;
+}
+
+/* This creates the floating badge effect */
+.icon-wrapper {
+    position: absolute;
+    left: -20px; /* Pulls it halfway out of the card */
+    top: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f8ff; /* Light blue background */
+    border: 1px solid #d0e5ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: #387ed1;
+}
+
+.card-content h5 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.justify-content-start{
+    padding: 10px 63px 63px 63px;
+}

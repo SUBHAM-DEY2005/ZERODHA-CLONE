@@ -1,0 +1,25 @@
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; 
+}
+
+.menus ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-top: 28px;
+}
+
+.menus ul li p {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.menus ul li p.active {
+  color: #ff5722; 
+}
+
