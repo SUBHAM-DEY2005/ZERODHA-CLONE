@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function Hero() {
-    // State to toggle between Signup and Login mode
     const [isLogin, setIsLogin] = useState(false);
-    
-    // State to store form inputs
+
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -17,7 +15,6 @@ function Hero() {
         agree: false
     });
 
-    // Update state when user types
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         setFormData({
@@ -29,13 +26,12 @@ function Hero() {
 const handleSubmit = async (e) => {
   e.preventDefault();
 
-  const BASE_URL = "http://localhost:8080";
+  const BASE_URL = "https://zerodha-backend-mtpe.onrender.com";
 
   const endpoint = isLogin
     ? `${BASE_URL}/login`
     : `${BASE_URL}/signup`;
 
-  // ✅ Send only required data in login
   const payload = isLogin
     ? { email: formData.email, password: formData.password }
     : formData;
@@ -45,14 +41,8 @@ const handleSubmit = async (e) => {
 
     if (isLogin) {
       alert("Login Successful!");
-
-      // ✅ Save token
       localStorage.setItem("token", response.data.token);
-
-      // ✅ Use token in future requests
       axios.defaults.headers.common["Authorization"] = response.data.token;
-
-      // ✅ Redirect
       window.location.href = "/univers";
 
     } else {
@@ -88,7 +78,6 @@ const handleSubmit = async (e) => {
                 <div className='col-lg-6 col-md-12 p-5 border rounded shadow-sm bg-white'>
                     <form onSubmit={handleSubmit} className="needs-validation">
                         
-                        {/* Show Name and Location fields ONLY for Signup */}
                         {!isLogin && (
                             <>
                                 <div className='row mb-3'>
@@ -149,7 +138,6 @@ const handleSubmit = async (e) => {
                             </>
                         )}
 
-                        {/* Email and Password - Always Shown */}
                         <div className='mb-3'>
                             <label className="form-label">Email address</label>
                             <input type="email" name="email" className="form-control" onChange={handleChange} required />

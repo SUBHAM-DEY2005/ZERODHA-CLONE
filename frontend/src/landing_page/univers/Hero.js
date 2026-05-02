@@ -8,19 +8,17 @@ const Hero = () => {
   const [user, setUser] = useState(null);
   const ref = useRef();
 
-  //Fetch user from backend
   useEffect(() => {
     const fetchUser = async () => {
       const token = localStorage.getItem("token");
 
-      // Check if token exists AND is not the string "undefined"
       if (!token || token === "undefined") {
         setUser({ name: "Guest User" });
         return;
       }
 
       try {
-        const res = await axios.get("http://localhost:8080/univers", {
+        const res = await axios.get("https://zerodha-backend-mtpe.onrender.com/univers", {
           headers: { Authorization: `Bearer ${token}` }
         });
         setUser(res.data);
@@ -34,7 +32,6 @@ const Hero = () => {
 
 
 
-  //Close dropdown when clicking outside
   useEffect(() => {
     const handler = (e) => {
       if (ref.current && !ref.current.contains(e.target)) {
@@ -59,9 +56,7 @@ const Hero = () => {
   // Logout
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:8080/logout", {}, { withCredentials: true });
-
-      // Clear the token from storage
+      await axios.post("https://zerodha-backend-mtpe.onrender.com/logout", {}, { withCredentials: true });
       localStorage.removeItem("token");
 
       window.location.href = "/";
@@ -124,7 +119,7 @@ const Hero = () => {
             </p>
 
             <button className="login-btn">
-              <a href="http://localhost:3000/" style={{ textDecoration: "none", color: "white", fontSize: "20px" }} to=""><img style={{ width: "20%", marginLeft: "20px" }} src="media\images\download.svg" />&nbsp;Login to Kite</a>
+              <a href="https://zerodha-kitedashboard.onrender.com" style={{ textDecoration: "none", color: "white", fontSize: "20px" }} to=""><img style={{ width: "20%", marginLeft: "20px" }} src="media\images\download.svg" />&nbsp;Login to Kite</a>
             </button>
           </div>
 

@@ -9,7 +9,7 @@ function MegaMenu() {
       <div className="container">
         <div className="top-section border-bottom">
           <div className="mega-item text-center" >
-            <Link to={isLoggedIn ? "/" : "/login"} style={{ textDecoration: "none", color: "black" }} to="">
+            <Link to={isLoggedIn ? "https://zerodha-kitedashboard.onrender.com" : "/login"} style={{ textDecoration: "none", color: "black" }} to="">
               <img src="/media/images/kite-logo.svg" alt="Kite" style={{ width: '55%' }} />
               <div className="text-content">
                 <h4>Kite</h4>

@@ -13,14 +13,13 @@
     border-color: #387ed1;
 }
 
-/* This creates the floating badge effect */
 .icon-wrapper {
     position: absolute;
-    left: -20px; /* Pulls it halfway out of the card */
+    left: -20px; 
     top: 40px;
     width: 40px;
     height: 40px;
-    background-color: #f1f8ff; /* Light blue background */
+    background-color: #f1f8ff; 
     border: 1px solid #d0e5ff;
     border-radius: 50%;
     display: flex;

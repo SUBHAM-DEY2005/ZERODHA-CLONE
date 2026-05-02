@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "./LoginPage";
 import Dashboard from "./components/Dashboard";
+import NotFound from "./NotFound";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -59,6 +60,8 @@ function App() {
             )
           }
         />
+
+        <Route path="*" element={<NotFound/>} />
       </Routes>
     </Router>
   );
