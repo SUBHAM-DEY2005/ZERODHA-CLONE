@@ -14,7 +14,7 @@ const Menu = ({ onLogout }) => {
     const fetchUser = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("http://localhost:8080/univers", {
+        const response = await fetch("https://zerodha-backend-mtpe.onrender.com/univers", {
           headers: {
             "Authorization": `Bearer ${token}`,
           },
