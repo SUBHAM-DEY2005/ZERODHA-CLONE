@@ -9,7 +9,6 @@ function MegaMenu() {
       <div className="container">
         <div className="top-section border-bottom">
           <div className="mega-item text-center" >
-            {isLoggedIn ? (
               <a
                 href="https://zerodha-kitedashboard.onrender.com"
                 style={{ textDecoration: "none", color: "black" }}
@@ -20,18 +19,6 @@ function MegaMenu() {
                   <p>Trading platform</p>
                 </div>
               </a>
-            ) : (
-              <Link
-                to="/login"
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                <img src="/media/images/kite-logo.svg" alt="Kite" style={{ width: '55%' }} />
-                <div className="text-content">
-                  <h4>Kite</h4>
-                  <p>Trading platform</p>
-                </div>
-              </Link>
-            )}
           </div>
 
           <div className="mega-item text-center">
